@@ -6,6 +6,8 @@ class QuoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Quote
         fields = ['id', 'quote', 'author', 'tags']
+        # Nested serializers
+        depth = 1
 
 
 class TagSerializer(serializers.ModelSerializer):

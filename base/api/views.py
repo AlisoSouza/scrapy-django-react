@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from quotes.models import Quote, Author, Tag
 from .serializers import QuoteSerializer, AuthorSerializer, TagSerializer
 from rest_framework import viewsets
